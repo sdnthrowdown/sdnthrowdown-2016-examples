@@ -66,8 +66,8 @@ routers = [
 
 url = "https://10.10.2.25:8443/oauth2/token"
 
-payload = {'grant_type': 'password', 'username': 'admin', 'password': 'northstar123'}
-response = requests.post (url, data=payload, auth=('admin','northstar123'), verify=False)
+payload = {'grant_type': 'password', 'username': 'some_name', 'password': 'some_password'}
+response = requests.post (url, data=payload, auth=('some_name','some_password'), verify=False)
 json_data = json.loads(response.text)
 authHeader= {"Authorization":"{token_type} {access_token}".format(**json_data)}
 
