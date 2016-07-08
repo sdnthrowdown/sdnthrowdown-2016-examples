@@ -30,11 +30,11 @@ routers = [
                                                                              ] 
             },
            { 'name': 'miami', 'router_id': '10.210.10.112', 'interfaces': [
-                                                                            { 'name': 'ge-0/1/0', 'address': '10.210.22.1' }, 
-                                                                            { 'name': 'ge-0/1/1', 'address': '10.210.24.1' }, 
-                                                                            { 'name': 'ge-0/1/2', 'address': '10.210.12.1' }, 
-                                                                            { 'name': 'ge-0/1/3', 'address': '10.210.11.2' }, 
-                                                                            { 'name': 'ge-1/3/0', 'address': '10.210.14.1' }
+                                                                            { 'name': 'ge-1/0/0', 'address': '10.210.22.1' }, 
+                                                                            { 'name': 'ge-1/0/1', 'address': '10.210.24.1' }, 
+                                                                            { 'name': 'ge-1/0/2', 'address': '10.210.12.1' }, 
+                                                                            { 'name': 'ge-1/0/3', 'address': '10.210.11.2' }, 
+                                                                            { 'name': 'ge-1/0/4', 'address': '10.210.14.1' }
                                                                             ] 
             },
            { 'name': 'new york', 'router_id': '10.210.10.118', 'interfaces': [
@@ -44,22 +44,22 @@ routers = [
                                                                                ] 
             },
            { 'name': 'los angeles', 'router_id': '10.210.10.113', 'interfaces': [
-                                                                                  { 'name': 'ge-0/1/0', 'address': '10.210.18.2' },
-                                                                                  { 'name': 'ge-0/1/1', 'address': '10.210.19.2' },
-                                                                                  { 'name': 'ge-0/1/2', 'address': '10.210.20.1' }
+                                                                                  { 'name': 'ge-1/0/0', 'address': '10.210.18.2' },
+                                                                                  { 'name': 'ge-1/0/1', 'address': '10.210.19.2' },
+                                                                                  { 'name': 'ge-1/0/2', 'address': '10.210.20.1' }
                                                                                   ]
             },
            { 'name': 'houston', 'router_id': '10.210.10.114', 'interfaces': [
-                                                                              { 'name': 'ge-0/1/0', 'address': '10.210.20.2' },
-                                                                              { 'name': 'ge-0/1/1', 'address': '10.210.21.2' },
-                                                                              { 'name': 'ge-0/1/2', 'address': '10.210.22.2' },
-                                                                              { 'name': 'ge-0/1/3', 'address': '10.210.25.1' }
+                                                                              { 'name': 'ge-1/0/0', 'address': '10.210.20.2' },
+                                                                              { 'name': 'ge-1/0/1', 'address': '10.210.21.2' },
+                                                                              { 'name': 'ge-1/0/2', 'address': '10.210.22.2' },
+                                                                              { 'name': 'ge-1/0/3', 'address': '10.210.25.1' }
                                                                               ] 
             },
            { 'name': 'tampa', 'router_id': '10.210.10.115', 'interfaces': [
                                                                             { 'name': 'ge-1/0/0', 'address': '10.210.25.2' }, 
                                                                             { 'name': 'ge-1/0/1', 'address': '10.210.24.2' }, 
-                                                                            { 'name': 'ge-1/0/2', 'address': '10.210.206.2' }
+                                                                            { 'name': 'ge-1/0/2', 'address': '10.210.26.2' }
                                                                             ]
             }
            ]
@@ -104,3 +104,4 @@ if flag == True:
     print '\tZ: ', zNodeName, zLinkName
 else:
     print "All links Up"
+
